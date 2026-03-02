@@ -40,3 +40,28 @@ function aluno(nome, curso) {
     let mensagem = `Seja bem vido ao curso de ${curso}, ${nome} !`
     console.log(mensagem)
 }
+
+let lista = ['João', 'José', 'Pedro']
+
+function verificar() {
+    let ver = lista.indexOf('Pedro')
+
+    if(ver == -1) {
+        console.log('Nome não encontrado')
+    } else {
+        console.log(lista.join(" - "))
+    }
+}
+
+function adicionar() {
+    let novato = prompt("Digite um novo nome: ")
+
+    if(novato === '' || novato === null) {
+        alert("Erro")
+    } else {
+        lista.push(novato)
+        lista.shift()
+    }
+
+    
+}
